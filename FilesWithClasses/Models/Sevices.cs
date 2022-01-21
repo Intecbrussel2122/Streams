@@ -16,9 +16,13 @@ namespace FilesWithClasses.Models
             {
                 for (int i = 0; i < books.Count; i++)
                 {
-                    sw.WriteLine(books[i].Title );
+                    sw.WriteLine(books[i].Title);
                     sw.WriteLine(books[i].Author);
                     sw.WriteLine(books[i].Year);
+
+                    //sw.Write(books[i].Title);
+                    //sw.Write(books[i].Author);
+                    //sw.Write(books[i].Year);
                 }
             }
         }
