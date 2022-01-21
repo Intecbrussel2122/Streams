@@ -11,9 +11,9 @@ namespace FilesWithClasses
     {
         static void Main(string[] args)
         {
-            //string path = @"c:\Temp\OneBook.txt";
-            //Book book = new Book() { Author = "Aness", Title = "C# book for advanced student in Intec", Year = 2021 };
-            //Sevices.WriteToFileOneBook(book, path);
+            string path1 = @"c:\Temp\OneBook.txt";
+            Book book = new Book() { Author = "Aness", Title = "C# book for advanced student in Intec", Year = 2021 };
+            Sevices.WriteToFileOneBook(book, path1);
 
 
             string path = @"c:\Temp\BooksLine.txt";
