@@ -33,16 +33,21 @@ namespace FilesWithClasses
 
             List<Book> sortedList = Sevices.ReadFromFile(path);
             sortedList.Sort();
+            Console.WriteLine();
             Console.WriteLine("Sorted by name");
             foreach (var item in sortedList)
             {
                 Console.WriteLine(item);
             }
 
-
-
-
-
+            //using lambda
+            Console.WriteLine();
+            Console.WriteLine("Sorted by year with lambda");
+            List<Book> SortedListBook = bk.OrderBy(b => b.Year).ToList();
+            foreach (var item in sortedList)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

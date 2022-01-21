@@ -12,7 +12,7 @@ namespace FilesWithClasses.Models
 
         public static void WriteToFile(List<Book> books, string path)
         {
-            using (StreamWriter sw = new StreamWriter(path, true))
+            using (StreamWriter sw = new StreamWriter(path, false))
             {
                 for (int i = 0; i < books.Count; i++)
                 {
