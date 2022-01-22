@@ -21,7 +21,7 @@ namespace WriteOneLine
 
         public override string ToString()
         {
-            return $"{Title, -10} {Author, -20} {Year-10}"; 
+            return $"{Title, -10} {Author, -20} {Year}"; 
         }
 
        
