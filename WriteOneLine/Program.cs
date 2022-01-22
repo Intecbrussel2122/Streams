@@ -15,7 +15,6 @@ namespace WriteOneLine
             books = PopulateBooks();
             WriteToFile(books,@"C:\temp\good.txt");
         }
-
         static void WriteToFile(List<Book> books, string path)
         {
             using (StreamWriter sw = new StreamWriter(path, false))
@@ -33,7 +32,6 @@ namespace WriteOneLine
                 }
             }
         }
-
         static List<Book> PopulateBooks()
         {
 
