@@ -30,12 +30,12 @@ namespace WriteOneLine
         {
             List<Book> books = new List<Book>();
 
-            books.Add(new Book { Title = "Title 3", Author = "Kenan", Year = 2010 }); // without coma is not working
-            books.Add(new Book { Title = "Title 4", Author = "Anass", Year = 2000 });
-            books.Add(new Book { Title = "Title 1", Author = "Fatih", Year = 2003 });
-            books.Add(new Book { Title = "Title 2", Author = "Florian", Year = 2008 });
-            books.Add(new Book { Title = "Title 5", Author = "Wouter", Year = 2015 });
-
+            books.Add(new Book { Title = "Title 3,", Author = "Kenan,", Year = 2010 }); // without coma is not working
+            books.Add(new Book { Title = "Title 4,", Author = "Anass,", Year = 2000 });
+            books.Add(new Book { Title = "Title 1,", Author = "Fatih,", Year = 2003 });
+            books.Add(new Book { Title = "Title 2,", Author = "Florian,", Year = 2008 });
+            books.Add(new Book { Title = "Title 5,", Author = "Wouter,", Year = 2015 });
+                                                 
             return books;
         }
 
