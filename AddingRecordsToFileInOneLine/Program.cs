@@ -44,16 +44,18 @@ namespace AddingRecordsToFileInOneLine
             //{
             //    Console.WriteLine(item);
             //}
-
+            //Console.WriteLine($"This is total {total}"); // will not work
 
 
             List<Book> booksFromFile = new List<Book>();
             booksFromFile = ReadFromFile(path);
+            int total = 0;
             foreach (var item in booksFromFile)
             {
                 Console.WriteLine(item);
+                total += item.Year;
             }
-
+            Console.WriteLine($"This is total {total}");
         }
         static List<Book> PopulateBooks()
         {
@@ -106,7 +108,6 @@ namespace AddingRecordsToFileInOneLine
         {
             List<string> booksAsString = new List<string>();
             FileInfo file = new FileInfo(path);
-            int total = 0;
             using (StreamReader sr = file.OpenText())
             {
                 string line = string.Empty;
