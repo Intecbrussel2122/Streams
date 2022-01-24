@@ -22,7 +22,6 @@ namespace AddingRecordsToFileInOneLine
 
             ////Add new record
             Book newBook = new Book();
-
             newBook.Title = "Sql Databases,";
             newBook.Author = "Olga,";
             newBook.Year = 2021;
