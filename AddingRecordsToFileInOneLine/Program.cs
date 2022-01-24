@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,8 @@ namespace AddingRecordsToFileInOneLine
     {
         static void Main(string[] args)
         {
-            string path = @"C:\temp\Addgood.txt";
+            //string path = @"C:\temp\Addgood.txt";
+            string path = ConfigurationManager.AppSettings["file"];
 
             List<Book> booksFromMethod = new List<Book>();
             booksFromMethod = PopulateBooks();
